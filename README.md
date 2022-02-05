@@ -12,8 +12,10 @@ InAppWebView를 사용하여 화면에 웹페이지를 띄우고, 띄운 웹페�
 
 # build.gradle 수정
 
+defaultConfig
 ```gradle
-android minSdkVersion : 17
+android minSdkVersion : 17 // 수정
+multiDexEnabled true       // 추가
 ```
 
 추가 >>
