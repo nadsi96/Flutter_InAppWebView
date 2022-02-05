@@ -1,16 +1,22 @@
-# inappwebview_prac2
+InAppWebView를 사용하여 화면에 웹페이지를 띄우고, 띄운 웹페이지와 메시지를 주고 받음
 
-A new Flutter project.
+실행시 화면상의 버튼패드부분 = 웹페이지
+하단 출력화면 = flutter 코드
 
-## Getting Started
+android minSdkVersion : 17
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+build.gradle에 추가 >>
+packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    
+   
