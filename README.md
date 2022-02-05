@@ -12,9 +12,12 @@ InAppWebView를 사용하여 화면에 웹페이지를 띄우고, 띄운 웹페�
 
 # build.gradle 수정
 
+```gradle
 android minSdkVersion : 17
+```
 
 추가 >>
+```gradle
 packagingOptions {
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
@@ -27,5 +30,5 @@ packagingOptions {
         exclude 'META-INF/license.txt'
         exclude 'META-INF/LGPL2.1'
     }
-    
+    ```
    
